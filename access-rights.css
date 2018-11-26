@@ -87,7 +87,7 @@ body{
     background:white;
     border-radius:6px;
     border:1px solid #ccc;
-    min-height:100px;
+    overflow-x:auto;
 }
 
 .panel-header{
@@ -95,4 +95,81 @@ body{
     color:#666;
     padding:10px 16px;
     border-bottom: 1px solid #ddd;
+}
+
+#access-rights-table{
+    display:table;
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+#access-rights-table th{
+    border:1px solid #eee;
+    border-collapse: collapse;
+    padding:4px;
+    width:16.66%;
+    border-top:none;
+    border-bottom-width:2px;
+}
+
+#access-rights-table td{
+    border:1px solid #eee;
+    border-collapse: collapse;
+    padding:4px;
+}
+
+#access-rights-table th:first-child{
+    border-left:none !important;
+    text-align:left;
+    padding-left:16px !important;
+    border-right-width:2px !important;
+}
+
+#access-rights-table td:first-child{
+    border-left:none !important;
+    text-align:left;
+    padding-left:16px !important;
+    border-right-width:2px !important;
+}
+
+#access-rights-table th:last-child{
+    border-right:none !important;
+}
+
+#access-rights-table td:last-child{
+    border-right:none !important;
+}
+
+.rights-icon{
+    display:table;
+    width:40px;
+    height:20px;
+    border-collapse: collapse;
+}
+
+.rights-icon-segment{
+    display:table-cell;
+    border:1px solid #999;
+}
+
+.rights-icon-segment-0.enabled{
+    background-color:#6a73ff;
+}
+
+.rights-icon-segment-1.enabled{
+    background-color:#ff6ace;
+}
+
+.rights-icon-segment-2.enabled{
+    background-color:#ffd36a;
+}
+
+.rights-icon-segment-3.enabled{
+    background-color:#6aff77;
+}
+
+.rights-icon-outer{
+    display:inline-block;
 }
